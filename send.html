@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send Money</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<h2>Send Money</h2>
+
+<div class="input-box">
+<input type="text" id="accountNumber" required>
+<label>Account Number</label>
+</div>
+
+<div class="input-box">
+<input type="text" id="bankName" required>
+<label>Bank Name</label>
+</div>
+
+<div class="input-box">
+<input type="number" id="amount" required>
+<label>Amount</label>
+</div>
+
+<button class="login-btn" onclick="sendMoney()">
+Send
+</button>
+
+<button class="back-btn" onclick="goBack()">
+Back
+</button>
+
+</div>
+
+<script src="send.js"></script>
+
+</body>
+</html>

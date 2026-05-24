@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crew Bank Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="dashboard">
+
+<div class="app">
+
+<div class="top">
+<h3 class="welcome">Hi Anita!</h3>
+</div>
+
+<div class="networth">
+<p>Net Worth</p>
+<h1>$329,226.20</h1>
+<p class="pending">Balance with pending</p>
+
+<button id="toggleTransactions">
+See All Transactions
+</button>
+</div>
+
+<div class="actions">
+<button class="action-btn" onclick="goToSend()">Send Money</button>
+<button class="action-btn" onclick="performAction('Withdraw')">Withdraw</button>
+<button class="action-btn" onclick="performAction('Deposit')">Deposit</button>
+</div>
+
+<div class="banking">
+
+<div class="section-title">
+<span>Banking</span>
+<span>$329,226.20</span>
+</div>
+
+<div class="bank-box">
+
+<div class="row">
+<span>Cash & Checking</span>
+<span>$327,272.48</span>
+</div>
+
+<div class="row">
+<span>CHECKING *2821</span>
+<span>$692.48</span>
+</div>
+
+<div class="row">
+<span>FREE CHECKING *6574</span>
+<span>$326,580.00</span>
+</div>
+
+<div class="row">
+<span>MONEY MARKET CHECKING *9921</span>
+<span>$0.00</span>
+</div>
+
+<p class="error">Connectivity Error: Swipe to fix.</p>
+
+</div>
+
+</div>
+
+<div class="credit">
+
+<div class="section-title">
+<span>Credit</span>
+<span>- $835.81</span>
+</div>
+
+<div class="bank-box">
+
+<div class="row">
+<span>Personal LOC Overdraft</span>
+<span>$0.00</span>
+</div>
+
+<div class="row">
+<span>PLATINUM</span>
+<span>- $835.81</span>
+</div>
+
+<p class="error">Connectivity Error: Swipe to fix.</p>
+
+</div>
+
+</div>
+
+<div id="transactions" class="transactions" style="display:none;">
+
+<h3>Transaction History</h3>
+
+<div id="txList">
+
+<div class="tx success">
+<div>
+<p>ATM Withdrawal</p>
+<small>Mar 12 2026 • 10:15 AM</small>
+</div>
+<span>- $200.00</span>
+</div>
+
+<div class="tx success">
+<div>
+<p>POS Withdrawal</p>
+<small>Mar 11 2026 • 08:42 AM</small>
+</div>
+<span>- $85.50</span>
+</div>
+
+<div class="tx failed">
+<div>
+<p>ATM Withdrawal</p>
+<small>Mar 10 2026 • 06:30 PM</small>
+</div>
+<span>Failed</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
