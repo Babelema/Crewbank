@@ -3,7 +3,7 @@ function login(){
 const email = document.getElementById("email").value;
 const password = document.getElementById("password").value;
 
-if(email === "forsonanitak@gmail.com" && password === "$blesstherich7"){
+if(email === "forsonanitak@gmail.com" && password === "$blessivy2015"){
 
 window.location.href = "dashboard.html";
 
